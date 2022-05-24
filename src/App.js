@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="App">
         <p>This is Dog Treat App</p>
+        <img src="https://github.com/mio-k/dog-treat-app/blob/main/public/images/treat_id_01.jpg"/>
       <Search treats={treats}/>
       <Filter treats={treats}/>
       <TreatList treats={treats} />
