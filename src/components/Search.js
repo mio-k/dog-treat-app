@@ -1,6 +1,6 @@
 import React from "react";
 
-function Search(){
+function Search({treats}){
     return(
         <p> This is returned from Search</p>
     )
