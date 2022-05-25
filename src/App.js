@@ -4,6 +4,7 @@ import Filter from "./components/Filter";
 import Search from "./components/Search";
 import TreatList from "./components/TreatList";
 import RequestForm from "./components/RequestForm";
+import Header from "./components/Header";
 
 function App() {
   const [treats, setTreats] = useState([]);

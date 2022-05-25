@@ -2,7 +2,6 @@ import React from "react";
 
 function Filter({filter, onChangeCategory}){
     function handleChangeCategory(e){
-        console.log(e.target.value)
         onChangeCategory(e.target.value)
     }
     return(
