@@ -4,10 +4,11 @@ import Treat from "./Treat";
 function TreatList({treats}){
     return(
     <div>
-    <p> This is returned from treatlist</p>
+    <ul className="cards">
     {treats.map((treat)=> 
-        <Treat treat={treat}/>
+        <Treat key={treat.id} treat={treat}/>
     )}
+    </ul>
     </div>
     )
 }

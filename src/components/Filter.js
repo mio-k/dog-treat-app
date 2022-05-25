@@ -1,8 +1,24 @@
 import React from "react";
 
-function Filter({treats}){
+function Filter({filter, onChangeCategory}){
+    function handleChangeCategory(e){
+        console.log(e.target.value)
+        onChangeCategory(e.target.value)
+    }
     return(
-        <p> This is returned from Filter</p>
+        <div>
+            <label>
+                <strong>Filter:</strong>
+                    <select onChange={handleChangeCategory} value={filter}>
+                        <option value="all">All</option>
+                        <option value="beef">Beef</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="pork">Pork</option>
+                        <option value="fish">Fish</option>
+                        <option value="other">Other</option>
+                    </select>
+            </label>
+        </div>
     )
 }
 export default Filter;
