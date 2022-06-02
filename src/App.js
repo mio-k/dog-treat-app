@@ -11,12 +11,19 @@ function App() {
   const [treats, setTreats] = useState([]);
   const [filter, setFilter] = useState("All");
   const [search, setSearch] = useState("");
+  // const [total, setTotal] = useState(0);
 
     useEffect(()=> {
       fetch('http://localhost:3000/treats')
       .then((r) => r.json())
       .then(data => setTreats(data))
     }, [])
+
+    // useEffect(() => {
+    //   fetch('http://localhost:3000/order')
+    //   .then((r) => r.json())
+    //   .then(data => setTotal(data))
+    // }, [])
 
     function onChangeCategory(category){
       setFilter(category)
@@ -38,6 +45,10 @@ function App() {
       .filter(treat =>{
         return treat.name.toLowerCase().includes(search.toLowerCase())
       })
+
+      // function onHandleOrderClick(id){
+      //   console.log("this is onHandleOrderClick")
+      // }
 
   return (
     <div className=".app">

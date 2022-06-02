@@ -193,8 +193,14 @@
   ],
   "order": [
     {
+      "id": 1,
       "price":"0",
-      "product":""
+      "product":"null"
+    },
+    {
+      "id": 2,
+      "price":"0",
+      "product":"null"
     }
   ]
 }

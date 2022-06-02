@@ -1,9 +1,10 @@
 import React from "react";
 
-function Treat({treat}){
+function Treat({treat, onHandleOrderClick}){
 
     function handleOrderClick(id){
         console.log("order button clicked")
+        onHandleOrderClick(id)
     }
     return(
         <li className="card">
