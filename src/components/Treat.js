@@ -17,13 +17,16 @@ function Treat({treat, onHandleOrderClick}){
     })
         onHandleOrderClick(newOrder)
     }
+    const defaultImage = "./images/defaultImage.png";
+    const treatImage = treat.image ? treat.image : defaultImage;
+    const parsedPrice = parseInt(treat.price, 10)
+
     return(
         <li className="card">
-        <img src={treat.image} alt={treat.name} onError={(e)=>e.target.src='./images/defaultImage.png'} />
+        <img src={treatImage} alt={treat.name} onError={(e)=>e.target.src='./images/defaultImage.png'} />
         <h4>{treat.name}</h4>
         <p>By: {treat.brand}</p>
-        {/* <p>Price: ${treat.price.toFixed(2)}</p> */}
-        <p>Price: ${treat.price}</p>
+        <p>Price: ${parsedPrice.toFixed(2)}</p>
         <button className=".card button" onClick={() => handleOrderClick(treat)}>Order</button>
         </li>
     )
