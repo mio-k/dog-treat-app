@@ -4,6 +4,8 @@ function RequestForm({handleAddToy}){
     const [formData, setFormData] = useState({
         name: "",
         brand: "",
+        price: "",
+        category: "All"
     })
 
     function handleChange(e){
@@ -28,21 +30,26 @@ function RequestForm({handleAddToy}){
         })
         .then(resp => resp.json())
         .then(newProduct => handleAddToy(newProduct))
-        setFormData({
-            name: "",
-            brand: "",
-        })
     }
     return(
-        <>
+        <div className="request-form">
         <h3>Add a New Product</h3>
         <p>Don't see the product you want to order? You can add it!</p>
-        <form onSubmit={handleSubmit}>
-            <input type="text" name="name" onChange={handleChange} placeholder="Enter the name of the product"/>
-            <input type="text" name="brand" onChange={handleChange}  placeholder="Enter the name of the brand"/>
-            <button type="submit">Submit</button>
+        <form onSubmit={handleSubmit} >
+            <input className=".input-text" type="text" name="name" onChange={handleChange} placeholder="Enter the name of the product"/><br/>
+            <input className=".input-text" type="text" name="brand" onChange={handleChange}  placeholder="Enter the brand"/><br/>
+            <input className=".input-text" type="text" name="price" onChange={handleChange}  placeholder="Enter the price"/><br/>
+            <p>Select Category:</p>
+            <select name="category" onChange={handleChange}>
+                <option value="beef">Beef</option>
+                <option value="chicken">Chicken</option>
+                <option value="pork">Pork</option>
+                <option value="fish">Fish</option>
+                <option value="other">Other</option>
+            </select><br />
+            <button type="submit" className="button">Add New Product</button>
         </form>
-        </>
+        </div>
     )
 }
 export default RequestForm;

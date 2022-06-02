@@ -190,5 +190,11 @@
       "image": "../../public/images/treat_id_19.jpg",
       "order": 0
     }
+  ],
+  "order": [
+    {
+      "price":"0",
+      "product":""
+    }
   ]
 }

@@ -12,7 +12,7 @@ function Treat({treat}){
         <p>By: {treat.brand}</p>
         {/* <p>Price: ${treat.price.toFixed(2)}</p> */}
         <p>Price: ${treat.price}</p>
-        <button onClick={() => handleOrderClick(treat.id)}>Order</button>
+        <button className=".card button" onClick={() => handleOrderClick(treat.id)}>Order</button>
         </li>
     )
 }
