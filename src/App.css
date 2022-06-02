@@ -14,7 +14,6 @@ body {
   font-size: 14px;
   padding: 1rem;
 }
-
 header {
   display: flex;
   justify-content: center;
@@ -23,25 +22,6 @@ header {
   height: 7rem;
   padding: 1rem;
 }
-
-h2 {
-  margin-bottom: 1rem;
-}
-
-button {
-  padding: 0.4rem 1rem;
-  margin: 0.5rem;
-  font-family: inherit;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  background-color: rgb(199, 24, 24);
-  color: white
-}
-.App-link {
-  color: #147e9b;
-}
-
 header h1 {
   font-size: 2.5em;
   font-weight: 900;
@@ -49,8 +29,39 @@ header h1 {
   padding: 0.5rem 0;
 }
 
-main {
-  padding: 0 5rem;
+h2 {
+  margin-bottom: 1rem;
+}
+
+request-form {
+  border:rgb(74, 72, 72);
+  border: 1px;
+}
+
+button {
+  padding: 0.4rem 1rem;
+  margin: 0rem;
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(199, 24, 24);
+  color: white
+}
+
+order-button {
+  padding: 0.4rem 1rem;
+  margin: 0.5rem;
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(199, 24, 24)
+}
+
+.App-link {
+  color: #147e9b;
 }
 
 .searchbar {
@@ -71,11 +82,6 @@ main {
 }
 
 
-label {
-  font-weight: bold;
-  display: block;
-}
-
 input {
   padding: 0.25rem;
   font-family: inherit;
@@ -84,10 +90,6 @@ input {
   margin: 0.3rem;
   transition: all 0.2s;
   width: 40%;
-}
-request-form{
-  border:rgb(74, 72, 72);
-  border: 1px;
 }
 .cards {
   list-style: none;
@@ -100,11 +102,11 @@ request-form{
 }
 
 .card img {
-  width: 100%;
+  width: 70%;
 }
 
 .card button {
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
 }
 
 

@@ -7,7 +7,7 @@ function Filter({filter, onChangeCategory}){
     return(
         <div>
             <label>
-                <strong>Filter:</strong>
+                <strong>Filter treats by main ingredients: </strong>
                     <select onChange={handleChangeCategory} value={filter}>
                         <option value="all">All</option>
                         <option value="beef">Beef</option>

@@ -7,7 +7,7 @@
       "favor": "Beef",
       "category": "beef",
       "price": 4.5,
-      "image": "./public/images/treat_id_01.jpg",
+      "image": "./images/treat_id_01.jpg",
       "order": 0
     },
     {
@@ -17,7 +17,7 @@
       "favor": "Duck and Sweet Potato",
       "category": "other",
       "price": 6.2,
-      "image": "./public/images/treat_id_02.jpg",
+      "image": "./images/treat_id_02.jpg",
       "order": 0
     },
     {
@@ -27,7 +27,7 @@
       "favor": "Salmon",
       "category": "fish",
       "price": 3.99,
-      "image": "../../public/images/treat_id_03.jpg",
+      "image": "./images/treat_id_03.jpg",
       "order": 0
     },
     {
@@ -37,7 +37,7 @@
       "favor": "Apple and Yogurt",
       "category": "other",
       "price": 5.5,
-      "image": "../../public/images/treat_id_04.jpg",
+      "image": "./images/treat_id_04.jpg",
       "order": 0
     },
     {
@@ -47,7 +47,7 @@
       "favor": "Salmon",
       "category": "fish",
       "price": 6.5,
-      "image": "../../public/images/treat_id_05.jpg",
+      "image": "./images/treat_id_05.jpg",
       "order": 0
     },
     {
@@ -57,7 +57,7 @@
       "favor": "Bacon and Blueberry",
       "category": "pork",
       "price": 5.45,
-      "image": "../../public/images/treat_id_06.jpg",
+      "image": "./images/treat_id_06.jpg",
       "order": 0
     },
     {
@@ -67,7 +67,7 @@
       "favor": "Cricket and Peanut Butter",
       "category": "other",
       "price": 7.5,
-      "image": "../../public/images/treat_id_07.jpg",
+      "image": "./images/treat_id_07.jpg",
       "order": 0
     },
     {
@@ -77,7 +77,7 @@
       "favor": "Chicken",
       "category": "chicken",
       "price": 12.95,
-      "image": "../../public/images/treat_id_08.jpg",
+      "image": "./images/treat_id_08.jpg",
       "order": 0
     },
     {
@@ -87,7 +87,7 @@
       "favor": "Venison",
       "category": "other",
       "price": 5.4,
-      "image": "../../public/images/treat_id_09.jpg",
+      "image": "./images/treat_id_09.jpg",
       "order": 0
     },
     {
@@ -97,7 +97,7 @@
       "favor": "Chicken",
       "category": "chicken",
       "price": 4.2,
-      "image": "../../public/images/treat_id_10.jpg",
+      "image": "./images/treat_id_10.jpg",
       "order": 0
     },
     {
@@ -107,7 +107,7 @@
       "favor": "Beef and Hickory smoke",
       "category": "beef",
       "price": 7.9,
-      "image": "../../public/images/treat_id_11.jpg",
+      "image": "./images/treat_id_11.jpg",
       "order": 0
     },
     {
@@ -117,7 +117,7 @@
       "favor": "Chicken and Sweet Potato",
       "category": "chicken",
       "price": 14.9,
-      "image": "../../public/images/treat_id_12.jpg",
+      "image": "./images/treat_id_12.jpg",
       "order": 0
     },
     {
@@ -127,7 +127,7 @@
       "favor": "Chicken",
       "category": "chicken",
       "price": 10.98,
-      "image": "../../public/images/treat_id_13.jpg",
+      "image": "./images/treat_id_13.jpg",
       "order": 0
     },
     {
@@ -137,7 +137,7 @@
       "favor": "Beef Liver",
       "category": "beef",
       "price": 33.4,
-      "image": "../../public/images/treat_id_14.jpg",
+      "image": "./images/treat_id_14.jpg",
       "order": 0
     },
     {
@@ -147,7 +147,7 @@
       "favor": "Pork Liver",
       "category": "pork",
       "price": 7.9,
-      "image": "../../public/images/treat_id_15.jpg",
+      "image": "./images/treat_id_15.jpg",
       "order": 0
     },
     {
@@ -157,7 +157,7 @@
       "favor": "Beef",
       "category": "beef",
       "price": 20.25,
-      "image": "../../public/images/treat_id_16.jpg",
+      "image": "./images/treat_id_16.jpg",
       "order": 0
     },
     {
@@ -167,7 +167,7 @@
       "favor": "Beef and Brisket",
       "category": "beef",
       "price": 14.9,
-      "image": "../../public/images/treat_id_17.jpg",
+      "image": "./images/treat_id_17.jpg",
       "order": 0
     },
     {
@@ -177,7 +177,7 @@
       "favor": "Pork",
       "category": "pork",
       "price": 16.99,
-      "image": "../../public/images/treat_id_18.jpg",
+      "image": "./images/treat_id_18.jpg",
       "order": 0
     },
     {
@@ -187,20 +187,33 @@
       "favor": "White fish fillets",
       "category": "fish",
       "price": 13.9,
-      "image": "../../public/images/treat_id_19.jpg",
+      "image": "./images/treat_id_19.jpg",
       "order": 0
+    },
+    {
+      "name": "test",
+      "brand": "test",
+      "price": "test",
+      "category": "All",
+      "order": 0,
+      "id": 20
     }
   ],
-  "order": [
+  "orders": [
     {
       "id": 1,
-      "price":"0",
-      "product":"null"
+      "price": "0",
+      "product": "null"
     },
     {
       "id": 2,
-      "price":"0",
-      "product":"null"
+      "price": "0",
+      "product": "null"
+    },
+    {
+      "price": 6.2,
+      "product": "Limited Ingredient",
+      "id": 3
     }
   ]
 }

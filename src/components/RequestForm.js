@@ -33,20 +33,20 @@ function RequestForm({handleAddToy}){
     }
     return(
         <div className="request-form">
-        <h3>Add a New Product</h3>
+        <h4>Add a New Product</h4>
         <p>Don't see the product you want to order? You can add it!</p>
         <form onSubmit={handleSubmit} >
             <input className=".input-text" type="text" name="name" onChange={handleChange} placeholder="Enter the name of the product"/><br/>
             <input className=".input-text" type="text" name="brand" onChange={handleChange}  placeholder="Enter the brand"/><br/>
             <input className=".input-text" type="text" name="price" onChange={handleChange}  placeholder="Enter the price"/><br/>
-            <p>Select Category:</p>
+            <p>What is the main ingredient? 
             <select name="category" onChange={handleChange}>
                 <option value="beef">Beef</option>
                 <option value="chicken">Chicken</option>
                 <option value="pork">Pork</option>
                 <option value="fish">Fish</option>
                 <option value="other">Other</option>
-            </select><br />
+            </select></p><br />
             <button type="submit" className="button">Add New Product</button>
         </form>
         </div>

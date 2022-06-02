@@ -7,9 +7,9 @@ function Search({search, onHandleSearch}){
     }
 
     return(
-        <div>
-            <label>Search treat by name</label>
-            <input type="text" placeholder="Search treat by name" name="name" value={search} onChange={handleSearch}/>
+        <div className=".serachbar">
+            <strong>Search treat by name</strong>
+            <input className=".searchbar input"type="text" placeholder="Enter name to search" name="name" value={search} onChange={handleSearch}/>
         </div>
     )
 }
