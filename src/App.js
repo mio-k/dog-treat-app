@@ -26,7 +26,6 @@ function App() {
     }, [])
 
     function currentTotal(orders){
-      console.log(orders)
       const currentAmount = orders.map(order => order.price).reduce((prev, curr) => prev + curr, 0)
       setTotal(currentAmount.toFixed(2))
     }
@@ -52,26 +51,29 @@ function App() {
         return treat.name.toLowerCase().includes(search.toLowerCase())
       })
     
-    function onHandleOrderClick(){
-      fetch('http://localhost:3000/orders')
-      .then((r) => r.json())
-      .then(orders =>{
-        const newTotal = orders.reduce((accumulator, order) => {
-          return accumulator + order.price;
-        }, 0)
-        console.log(newTotal)
-        setTotal(newTotal)
-      })
-    }
-
+    // function onHandleOrderClick(){
+    //   fetch('http://localhost:3000/orders')
+    //   .then((r) => r.json())
+    //   .then(orders =>{
+    //     const newTotal = orders.reduce((accumulator, order) => {
+    //       return accumulator + order.price;
+    //     }, 0)
+    //     setTotal(newTotal)
+    //   })
+    // }
+  function onHandleOrderClick(newOrder){
+    console.log(newOrder.price)
+    console.log(total)
+    setTotal(total =+ newOrder.price)
+  }
 
   return (
     <div className=".app">
+      {/* <Switch> */}
         {/* <Route path="/header"> */}
-        <p>{total}</p>
             <Header />      
-        {/* </Route> */}
-        {/* <Route path="./search"> */}
+        {/* </Route>
+        <Route path="./search"> */}
             <Search search={search} onHandleSearch={setSearch}/>
         {/* </Route> */}
         {/* <Route path="./filter"> */}
@@ -81,8 +83,12 @@ function App() {
            <RequestForm handleAddToy={handleAddToy} />
         {/* </Route> */}
         {/* <Route path="./treatlist"> */}
-           <TreatList treats={filteredList} onHandleOrderClick={onHandleOrderClick} total={total} orders={orders}/>
+           <TreatList treats={filteredList} onHandleOrderClick={onHandleOrderClick} total={total}/>
         {/* </Route> */}
+        {/* <Route path="/"> */}
+          {/* <Home /> */}
+        {/* </Route> */}
+      {/* </Switch> */}
     </div>
   );
   }

@@ -5,10 +5,10 @@ function Filter({filter, onChangeCategory}){
         onChangeCategory(e.target.value)
     }
     return(
-        <div>
+        <div className="filter">
             <label>
                 <strong>Filter treats by main ingredients: </strong>
-                    <select onChange={handleChangeCategory} value={filter}>
+                    <select onChange={handleChangeCategory} value={filter} className="filter">
                         <option value="all">All</option>
                         <option value="beef">Beef</option>
                         <option value="chicken">Chicken</option>
