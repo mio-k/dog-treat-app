@@ -15,7 +15,7 @@ function Treat({treat, onHandleOrderClick}){
         },
         body: JSON.stringify(newOrder)
     })
-        onHandleOrderClick(newOrder)
+        onHandleOrderClick()
     }
     const defaultImage = "./images/defaultImage.png";
     const treatImage = treat.image ? treat.image : defaultImage;

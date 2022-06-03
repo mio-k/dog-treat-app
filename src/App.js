@@ -22,8 +22,14 @@ function App() {
     useEffect(() => {
       fetch('http://localhost:3000/orders')
       .then((r) => r.json())
-      .then(data => setTotal(data))
+      .then(orders => currentTotal(orders))
     }, [])
+
+    function currentTotal(orders){
+      console.log(orders)
+      const currentAmount = orders.map(order => order.price).reduce((prev, curr) => prev + curr, 0)
+      setTotal(currentAmount.toFixed(2))
+    }
 
     function onChangeCategory(category){
       setFilter(category)
@@ -45,16 +51,25 @@ function App() {
       .filter(treat =>{
         return treat.name.toLowerCase().includes(search.toLowerCase())
       })
+    
+    function onHandleOrderClick(){
+      fetch('http://localhost:3000/orders')
+      .then((r) => r.json())
+      .then(orders =>{
+        const newTotal = orders.reduce((accumulator, order) => {
+          return accumulator + order.price;
+        }, 0)
+        console.log(newTotal)
+        setTotal(newTotal)
+      })
+    }
 
-      function onHandleOrderClick(newOrder){
-        console.log("this is onHandleOrderClick")
-        const totalPrice = []
-      }
 
   return (
     <div className=".app">
         {/* <Route path="/header"> */}
-            <Header />
+        <p>{total}</p>
+            <Header />      
         {/* </Route> */}
         {/* <Route path="./search"> */}
             <Search search={search} onHandleSearch={setSearch}/>
@@ -66,10 +81,10 @@ function App() {
            <RequestForm handleAddToy={handleAddToy} />
         {/* </Route> */}
         {/* <Route path="./treatlist"> */}
-           <TreatList treats={filteredList} onHandleOrderClick={onHandleOrderClick} />
+           <TreatList treats={filteredList} onHandleOrderClick={onHandleOrderClick} total={total} orders={orders}/>
         {/* </Route> */}
     </div>
   );
-}
+  }
 
 export default App;

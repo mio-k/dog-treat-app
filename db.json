@@ -202,18 +202,73 @@
   "orders": [
     {
       "id": 1,
-      "price": "0",
+      "price": 0,
       "product": "null"
     },
     {
       "id": 2,
-      "price": "0",
+      "price": 0,
       "product": "null"
     },
     {
       "price": 6.2,
       "product": "Limited Ingredient",
       "id": 3
+    },
+    {
+      "price": 6.2,
+      "product": "Limited Ingredient",
+      "id": 4
+    },
+    {
+      "price": 6.2,
+      "product": "Limited Ingredient",
+      "id": 5
+    },
+    {
+      "price": 6.2,
+      "product": "Limited Ingredient",
+      "id": 6
+    },
+    {
+      "price": 6.2,
+      "product": "Limited Ingredient",
+      "id": 7
+    },
+    {
+      "price": 6.2,
+      "product": "Limited Ingredient",
+      "id": 8
+    },
+    {
+      "price": 3.99,
+      "product": "Training Bits",
+      "id": 9
+    },
+    {
+      "price": 3.99,
+      "product": "Training Bits",
+      "id": 10
+    },
+    {
+      "price": 5.45,
+      "product": "Grain Free Crunch",
+      "id": 11
+    },
+    {
+      "price": 5.45,
+      "product": "Grain Free Crunch",
+      "id": 12
+    },
+    {
+      "price": 5.45,
+      "product": "Grain Free Crunch",
+      "id": 13
+    },
+    {
+      "price": 5.5,
+      "product": "Health Bars",
+      "id": 14
     }
   ]
 }
