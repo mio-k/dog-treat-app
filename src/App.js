@@ -7,6 +7,7 @@ import TreatList from "./components/TreatList";
 import RequestForm from "./components/RequestForm";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
   const [treats, setTreats] = useState([]);
@@ -64,6 +65,7 @@ function App() {
         <Route path="filter" element={<Filter filter={filter} onChangeCategory={onChangeCategory}/>} />
         <Route path="addtreat" elemewnt={<RequestForm handleAddToy={handleAddToy} />} />
         <Route path="treatlist" element={ <TreatList treats={filteredList} onHandleOrderClick={onHandleOrderClick} total={total}/>}/>
+        <Route path="about" element={<About />}/>
       </Routes>
       </div>
           // <div className=".app"> 
