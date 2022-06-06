@@ -15,7 +15,8 @@ function Treat({treat, onHandleOrderClick}){
         },
         body: JSON.stringify(newOrder)
     })
-        onHandleOrderClick(newOrder)
+    .then(resp => resp.json())
+    .then(treat => onHandleOrderClick(treat.price))
     }
     const defaultImage = "./images/defaultImage.png";
     const treatImage = treat.image ? treat.image : defaultImage;

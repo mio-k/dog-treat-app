@@ -4,15 +4,24 @@ function RequestForm({handleAddToy}){
     const [formData, setFormData] = useState({
         name: "",
         brand: "",
-        price: "",
+        price: 0.00,
         category: "All"
     })
 
     function handleChange(e){
-        setFormData({
+        if(e.target.name === "price"){
+            const price = parseFloat(e.target.value);
+            console.log(price)
+            setFormData({
+                ...formData,
+                [e.target.name]: price
+            })
+        } else{
+            setFormData({
             ...formData,
             [e.target.name]: e.target.value,
-        });
+            })
+            }
     };
 
     function handleSubmit(e){

@@ -1,6 +1,9 @@
 import React from "react";
 
-function Home(){
-    return "this is home"
+const Home = () => {
+  return (
+  <h1>Treat Order Page</h1>
+  )
 }
+
 export default Home;

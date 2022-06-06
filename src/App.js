@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import './App.css'
 import Filter from "./components/Filter";
 import Search from "./components/Search";
 import TreatList from "./components/TreatList";
 import RequestForm from "./components/RequestForm";
 import Header from "./components/Header";
+import Home from "./components/Home";
 
 function App() {
   const [treats, setTreats] = useState([]);
@@ -16,7 +17,7 @@ function App() {
     useEffect(()=> {
       fetch('http://localhost:3000/treats')
       .then((r) => r.json())
-      .then(data => setTreats(data))
+      .then(treats => setTreats(treats))
     }, [])
 
     useEffect(() => {
@@ -32,11 +33,8 @@ function App() {
 
     function onChangeCategory(category){
       setFilter(category)
-      let url="http://localhost:3000/treats"
-      if(filter !=="All"){
-        url += `?category=${category}`
-      }
-    }
+        }
+
     function handleAddToy(newProduct){
       setTreats([...treats, newProduct])
     }
@@ -51,46 +49,31 @@ function App() {
         return treat.name.toLowerCase().includes(search.toLowerCase())
       })
     
-    // function onHandleOrderClick(){
-    //   fetch('http://localhost:3000/orders')
-    //   .then((r) => r.json())
-    //   .then(orders =>{
-    //     const newTotal = orders.reduce((accumulator, order) => {
-    //       return accumulator + order.price;
-    //     }, 0)
-    //     setTotal(newTotal)
-    //   })
-    // }
-  function onHandleOrderClick(newOrder){
-    console.log(newOrder.price)
-    console.log(total)
-    setTotal(total =+ newOrder.price)
+  function onHandleOrderClick(price){
+    const newOrderNumber = parseFloat(price);
+    const updatedTotal = parseFloat(total)
+    const finalTotal = updatedTotal + newOrderNumber
+    setTotal(finalTotal)
   }
 
   return (
-    <div className=".app">
-      {/* <Switch> */}
-        {/* <Route path="/header"> */}
-            <Header />      
-        {/* </Route>
-        <Route path="./search"> */}
-            <Search search={search} onHandleSearch={setSearch}/>
-        {/* </Route> */}
-        {/* <Route path="./filter"> */}
-           <Filter filter={filter} onChangeCategory={setFilter}/>
-        {/* </Route> */}
-        {/* <Route path="./addtreat"> */}
-           <RequestForm handleAddToy={handleAddToy} />
-        {/* </Route> */}
-        {/* <Route path="./treatlist"> */}
-           <TreatList treats={filteredList} onHandleOrderClick={onHandleOrderClick} total={total}/>
-        {/* </Route> */}
-        {/* <Route path="/"> */}
-          {/* <Home /> */}
-        {/* </Route> */}
-      {/* </Switch> */}
-    </div>
-  );
+    <div className=".app"> 
+      <Routes>
+        <Header /> 
+        <Route path="search" element={<Search search={search} onHandleSearch={setSearch}/>} /> 
+        <Route path="filter" element={<Filter filter={filter} onChangeCategory={onChangeCategory}/>} />
+        <Route path="addtreat" elemewnt={<RequestForm handleAddToy={handleAddToy} />} />
+        <Route path="treatlist" element={ <TreatList treats={filteredList} onHandleOrderClick={onHandleOrderClick} total={total}/>}/>
+      </Routes>
+      </div>
+          // <div className=".app"> 
+          //   <Header /> 
+          //   <Search search={search} onHandleSearch={setSearch}/>
+          //   <Filter filter={filter} onChangeCategory={onChangeCategory}/>
+          //   <RequestForm handleAddToy={handleAddToy} />
+          //   <TreatList treats={filteredList} onHandleOrderClick={onHandleOrderClick} total={total}/>
+          // </div>
+          )
   }
 
 export default App;

@@ -6,7 +6,7 @@ function TreatList({treats, onHandleOrderClick, total}){
 
     return(
     <div>
-    <strong>Current group total: {total}. {shippingMessage}</strong>
+    <strong>Current group total: ${total}. {shippingMessage}</strong>
     <ul className="cards">
     {treats.map((treat)=> 
         <Treat key={treat.id} treat={treat} onHandleOrderClick={onHandleOrderClick} />

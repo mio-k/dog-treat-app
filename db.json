@@ -166,7 +166,7 @@
       "name": "BBQ Style Cuts",
       "favor": "Beef and Brisket",
       "category": "beef",
-      "price": 14.9,
+      "price": 14.95,
       "image": "./images/treat_id_17.jpg",
       "order": 0
     },
@@ -186,9 +186,17 @@
       "name": "Purely One",
       "favor": "White fish fillets",
       "category": "fish",
-      "price": 13.9,
+      "price": 13.95,
       "image": "./images/treat_id_19.jpg",
       "order": 0
+    },
+    {
+      "name": "",
+      "brand": "",
+      "price": 7.89,
+      "category": "All",
+      "order": 0,
+      "id": 20
     }
   ],
   "orders": [
@@ -196,16 +204,6 @@
       "id": 1,
       "price": 0,
       "product": "null"
-    },
-    {
-      "price": 3.99,
-      "product": "Training Bits",
-      "id": 2
-    },
-    {
-      "price": 14.9,
-      "product": "Chik'n Sweet Potato",
-      "id": 3
     }
   ]
 }
