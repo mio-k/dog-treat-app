@@ -189,14 +189,6 @@
       "price": 13.95,
       "image": "./images/treat_id_19.jpg",
       "order": 0
-    },
-    {
-      "name": "",
-      "brand": "",
-      "price": 7.89,
-      "category": "All",
-      "order": 0,
-      "id": 20
     }
   ],
   "orders": [
