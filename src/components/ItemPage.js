@@ -56,6 +56,7 @@ function App() {
 
   return (
     <div className=".app"> 
+        <Header />
         <Search search={search} onHandleSearch={setSearch}/>
         <Filter filter={filter} onChangeCategory={onChangeCategory}/>
         <RequestForm handleAddToy={handleAddToy} />

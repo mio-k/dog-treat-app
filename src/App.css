@@ -58,6 +58,16 @@ input {
   color: #147e9b;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  background: rgb(199, 24, 24);
+  font: white;
+  color: white;
+  opacity: 0.8;
+  height: 5rem;
+  padding: 1rem;
+}
 
 @media (min-width: 768px) {
   .cards {
@@ -98,17 +108,6 @@ input {
   margin: 1rem;
   display: flex;
   justify-content: left;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  background: rgb(199, 24, 24);
-  font: white;
-  color: white;
-  opacity: 0.8;
-  height: 3rem;
-  padding: 1rem;
 }
 
 h2 {

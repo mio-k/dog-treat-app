@@ -3,6 +3,7 @@ import React from "react";
 function About(){
     return(
         <div>
+            <header />
         <h1>Dog Pod's Chewy Order App</h1>
         <p>The Dog Pod is a group of dog owners in my neighborhood. We dog sit each other's dogs, and have fun dog-themed get-togeters often.</p>
         <p>One of the things we often do also is to combine our Chewy orders to get free shipping. Chewy offers free shipping over $49 worth of purchases.</p>

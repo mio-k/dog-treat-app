@@ -1,8 +1,11 @@
 import React from "react";
 
-const Home = () => {
-  return (
-  <h1>Treat Order Page</h1>
+function Home(){
+  return(
+    <div>
+    <img src="../images/defaultImage.png" alt="Home image" />
+    <h1>Welcome To The Dog Pod Treats!</h1>
+    </div>
   )
 }
 
