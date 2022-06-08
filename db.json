@@ -189,46 +189,6 @@
       "price": 13.95,
       "image": "./images/treat_id_19.jpg",
       "order": 0
-    },
-    {
-      "name": "ScruffNugget's Best",
-      "brand": "Dray's Treats",
-      "price": 9.9,
-      "category": "other",
-      "order": 0,
-      "id": 20
-    },
-    {
-      "name": "test",
-      "brand": "test",
-      "price": 10.99,
-      "category": "chicken",
-      "order": 0,
-      "id": 21
-    },
-    {
-      "name": "asdfsaf",
-      "brand": "sdffds",
-      "price": 9.99,
-      "category": "All",
-      "order": 0,
-      "id": 22
-    },
-    {
-      "name": "yyy",
-      "brand": "uuu",
-      "price": "2.99",
-      "category": "All",
-      "order": 0,
-      "id": 23
-    },
-    {
-      "name": "iii",
-      "brand": "iii",
-      "price": "2.30",
-      "category": "All",
-      "order": 0,
-      "id": 24
     }
   ],
   "orders": [
@@ -236,71 +196,6 @@
       "id": 1,
       "price": 0,
       "product": "null"
-    },
-    {
-      "price": 6.5,
-      "product": "Wilderness Trail Treats",
-      "id": 2
-    },
-    {
-      "price": 5.45,
-      "product": "Grain Free Crunch",
-      "id": 3
-    },
-    {
-      "price": 7.5,
-      "product": "Cricket Cookies",
-      "id": 4
-    },
-    {
-      "price": 12.95,
-      "product": "Chicken Meatballs",
-      "id": 5
-    },
-    {
-      "price": 14.9,
-      "product": "Chik'n Sweet Potato",
-      "id": 6
-    },
-    {
-      "price": 5.5,
-      "product": "Health Bars",
-      "id": 7
-    },
-    {
-      "price": 3.99,
-      "product": "Training Bits",
-      "id": 8
-    },
-    {
-      "price": 6.2,
-      "product": "Limited Ingredient",
-      "id": 9
-    },
-    {
-      "price": 4.5,
-      "product": "Training Bits",
-      "id": 10
-    },
-    {
-      "price": 4.5,
-      "product": "Training Bits",
-      "id": 11
-    },
-    {
-      "price": 6.2,
-      "product": "Limited Ingredient",
-      "id": 12
-    },
-    {
-      "price": 3.99,
-      "product": "Training Bits",
-      "id": 13
-    },
-    {
-      "price": 5.5,
-      "product": "Health Bars",
-      "id": 14
     }
   ]
 }
