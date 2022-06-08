@@ -85,7 +85,6 @@ a.nav.active {
   background: rgb(199, 24, 24);
   font: white;
   color: white;
-  opacity: 0.8;
   height: 5rem;
   padding: 1rem;
 }
@@ -141,4 +140,6 @@ h2 {
 
 .landing {
   background-color: rgb(199, 24, 24);
+  text-align: center;
+  padding-bottom: 5rem;
 }
