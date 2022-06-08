@@ -1,7 +1,7 @@
 # Dog-treat-app
-This is where I will store the entire phase 1 final project. 
+This is where I store the entire phase 1 final project. 
 
-#Project Requirements
+# Project Requirements
 - Make a single page application. -- This app has only one html file, created by using create-react-app.
 - Minimum 5 components that are connected logically. -- This app has 10 components, and architected to pass data and functions in an efficient manner. 
 - Minimum 3 client-side routes using React Router with a nav bar. -- Nav bar in this app is set up using React Router, and allows users to move from component to component.
