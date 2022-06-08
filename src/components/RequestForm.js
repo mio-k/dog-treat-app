@@ -4,24 +4,15 @@ function RequestForm({handleAddToy}){
     const [formData, setFormData] = useState({
         name: "",
         brand: "",
-        price: 0.00,
+        price: "",
         category: "All"
     })
 
     function handleChange(e){
-        if(e.target.name === "price"){
-            const price = parseFloat(e.target.value);
-            console.log(price)
-            setFormData({
-                ...formData,
-                [e.target.name]: price
-            })
-        } else{
             setFormData({
             ...formData,
             [e.target.name]: e.target.value,
             })
-            }
     };
 
     function handleSubmit(e){
@@ -39,17 +30,23 @@ function RequestForm({handleAddToy}){
         })
         .then(resp => resp.json())
         .then(newProduct => handleAddToy(newProduct))
+        setFormData({
+                name: "",
+                brand: "",
+                price: "",
+                category: "All"
+        })
     }
     return(
         <div className="request-form">
         <h3>Add a New Product</h3>
         <p>Don't see the product you want to order? You can add it!</p>
         <form onSubmit={handleSubmit} >
-            Product Name: <input className=".input-text" type="text" name="name" onChange={handleChange} placeholder="Enter the name of the product"/><br/>
-            Brand: <input className=".input-text" type="text" name="brand" onChange={handleChange}  placeholder="Enter the brand"/><br/>
-            Price: <input className=".input-text" type="text" name="price" onChange={handleChange}  placeholder="Enter the price"/><br/>
+            Product Name: <input value={formData.name} className=".input-text" type="text" name="name" onChange={handleChange} placeholder="Enter the name of the product"/><br/>
+            Brand: <input value={formData.brand} className=".input-text" type="text" name="brand" onChange={handleChange}  placeholder="Enter the brand"/><br/>
+            Price: <input value={formData.price} className=".input-text" type="text" name="price" onChange={handleChange}  placeholder="Enter the price"/><br/>
             <p>What is the main ingredient? 
-            <select name="category" onChange={handleChange}>
+            <select name="category" onChange={handleChange} value={formData.category}>
                 <option value="beef">Beef</option>
                 <option value="chicken">Chicken</option>
                 <option value="pork">Pork</option>

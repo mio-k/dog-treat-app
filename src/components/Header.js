@@ -6,7 +6,7 @@ function Header(){
         <div className="header">
           <p>test test</p>
           <strong className="title">DogPod Treats</strong>
-          <NavLink to="ItemPage">Order Treats</NavLink>
+          <NavLink to="treats">Order Treats</NavLink>
           <NavLink to="about">About This App</NavLink>
         </div>
     )

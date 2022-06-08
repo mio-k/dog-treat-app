@@ -9,8 +9,9 @@ import Home from "./components/Home";
 function App() {
   return (
     <div className=".app"> 
+      <Header />
       <Routes>
-        <Route path="header" element={<Header />} />
+        {/* <Route path="header" element={<Header />} /> */}
         <Route path="/" element={ <Home />}/>
         <Route path="treats" element={<ItemPage />}/>
         <Route path="about" element={<About />}/>

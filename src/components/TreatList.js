@@ -2,7 +2,7 @@ import React from "react";
 import Treat from "./Treat";
 
 function TreatList({treats, onHandleOrderClick, total}){
-    const shippingMessage = total > 49 ? "We got over $49 worth of order so we qualify for a free shipping!" : `We need $${49-total} more to qualify for freeshipping`
+    const shippingMessage = total > 49 ? "We got over $49 worth of order so we qualify for a free shipping!" : `We need $${(49-total).toFixed(2)} more to qualify for freeshipping`
 
     return(
     <div>

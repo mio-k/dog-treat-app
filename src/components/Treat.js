@@ -26,7 +26,7 @@ function Treat({treat, onHandleOrderClick}){
         <img src={treatImage} alt={treat.name} onError={(e)=>e.target.src='./images/defaultImage.png'} />
         <h4>{treat.name}</h4>
         <p>By: {treat.brand}</p>
-        <p>Price: ${treat.price.toFixed(2)}</p>
+        <p>Price: ${parseFloat(treat.price).toFixed(2)}</p>
         <button className=".card button" onClick={() => handleOrderClick(treat)}>Order</button>
         </li>
     )
