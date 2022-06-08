@@ -43,6 +43,27 @@ input {
   width: 40%;
 }
 
+.title {
+  align-content : left;
+  font-size: 2em;
+  color: white;
+}
+.nav {
+  display: inline-block;
+  padding: 0.5rem 0.5rem 0.5rem 5rem;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  display: flex;
+  transition: 0.1s;
+  text-decoration-line: underline;
+}
+a.nav.hover,
+a.nav.active {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
 /* margin is used by the cards, but doesn't seem to care about the border information I added */
 .card {
   margin: 1rem;
