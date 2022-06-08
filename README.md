@@ -3,7 +3,7 @@ This is where I will store the entire phase 1 final project.
 
 #Project Requirements
 - Make a single page application. -- This app has only one html file, created by using create-react-app.
-- Minimum 5 components that are connected logically. -- This app has seven components, and architected to pass data and functions in an efficient manner. 
+- Minimum 5 components that are connected logically. -- This app has 10 components, and architected to pass data and functions in an efficient manner. 
 - Minimum 3 client-side routes using React Router with a nav bar. -- Nav bar in this app is set up using React Router, and allows users to move from component to component.
 - Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Use a form to make your post request, specifically a controlled form/component. Additionally, you may choose to incorporate data from an external API but it is not required. -- This app includes 2 get requests to initially fetch the treat and the order information, 2 post requests to order treats and add new treats to the catalog.
 - Add styling. -- this app is styled to present the items in a columned manner that is also responsive. It also has consistent color scheme.  
