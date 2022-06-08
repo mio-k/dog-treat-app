@@ -6,7 +6,7 @@
       "name": "Training Bits",
       "favor": "Beef",
       "category": "beef",
-      "price": 4.5,
+      "price": 4.55,
       "image": "./images/treat_id_01.jpg",
       "order": 0
     },
@@ -16,7 +16,7 @@
       "name": "Limited Ingredient",
       "favor": "Duck and Sweet Potato",
       "category": "other",
-      "price": 6.2,
+      "price": 6.29,
       "image": "./images/treat_id_02.jpg",
       "order": 0
     },
@@ -36,7 +36,7 @@
       "name": "Health Bars",
       "favor": "Apple and Yogurt",
       "category": "other",
-      "price": 5.5,
+      "price": 5.52,
       "image": "./images/treat_id_04.jpg",
       "order": 0
     },
@@ -46,7 +46,7 @@
       "name": "Wilderness Trail Treats",
       "favor": "Salmon",
       "category": "fish",
-      "price": 6.5,
+      "price": 6.55,
       "image": "./images/treat_id_05.jpg",
       "order": 0
     },
@@ -66,7 +66,7 @@
       "name": "Cricket Cookies",
       "favor": "Cricket and Peanut Butter",
       "category": "other",
-      "price": 7.5,
+      "price": 7.99,
       "image": "./images/treat_id_07.jpg",
       "order": 0
     },
@@ -86,7 +86,7 @@
       "name": "Jumpin' Stix",
       "favor": "Venison",
       "category": "other",
-      "price": 5.4,
+      "price": 5.99,
       "image": "./images/treat_id_09.jpg",
       "order": 0
     },
@@ -96,7 +96,7 @@
       "name": "Snack Sticks",
       "favor": "Chicken",
       "category": "chicken",
-      "price": 4.2,
+      "price": 4.25,
       "image": "./images/treat_id_10.jpg",
       "order": 0
     },
@@ -106,7 +106,7 @@
       "name": "Mini Bites",
       "favor": "Beef and Hickory smoke",
       "category": "beef",
-      "price": 7.9,
+      "price": 7.99,
       "image": "./images/treat_id_11.jpg",
       "order": 0
     },
@@ -116,7 +116,7 @@
       "name": "Chik'n Sweet Potato",
       "favor": "Chicken and Sweet Potato",
       "category": "chicken",
-      "price": 14.9,
+      "price": 14.99,
       "image": "./images/treat_id_12.jpg",
       "order": 0
     },
@@ -136,7 +136,7 @@
       "name": "Pro-Treat",
       "favor": "Beef Liver",
       "category": "beef",
-      "price": 33.4,
+      "price": 33.49,
       "image": "./images/treat_id_14.jpg",
       "order": 0
     },
@@ -146,7 +146,7 @@
       "name": "High-Protein Biscuits",
       "favor": "Pork Liver",
       "category": "pork",
-      "price": 7.9,
+      "price": 7.99,
       "image": "./images/treat_id_15.jpg",
       "order": 0
     },
@@ -192,10 +192,6 @@
     }
   ],
   "orders": [
-    {
-      "id": 1,
-      "price": 0,
-      "product": "null"
-    }
+
   ]
 }
